@@ -7,9 +7,7 @@ Dokumentasi ini menyediakan panduan komprehensif langkah demi langkah untuk meng
 ![arsitektur](arsitekur/aristekur.jpg)
 
 
-## 📋 Daftar Isi
 - [Pembuatan dan Pemasangan Self-Signed Certificate untuk IIS di Windows](#pembuatan-dan-pemasangan-self-signed-certificate-untuk-iis-di-windows)
-  - [📋 Daftar Isi](#-daftar-isi)
   - [1. Cek Identitas Server (Nama, FQDN, \& IP)](#1-cek-identitas-server-nama-fqdn--ip)
     - [A. Cek Nama Komputer (Computer Name)](#a-cek-nama-komputer-computer-name)
     - [B. Cek FQDN (Fully Qualified Domain Name)](#b-cek-fqdn-fully-qualified-domain-name)
@@ -24,7 +22,7 @@ Dokumentasi ini menyediakan panduan komprehensif langkah demi langkah untuk meng
     - [6.3 Cara 3: Setting Client di Network (Pengaturan DNS Client)](#63-cara-3-setting-client-di-network-pengaturan-dns-client)
   - [Sebagai contoh server DNS yg berada di IP 192.168.100.1](#sebagai-contoh-server-dns-yg-berada-di-ip-1921681001)
     - [6.4 Cara 4: Setting Network di Gateway (Router / Firewall)](#64-cara-4-setting-network-di-gateway-router--firewall)
-  - [7 Membuat SSL type PFX untuk IIS Certiface](#7-membuat-ssl-type-pfx-untuk-iis-certiface)
+  - [7 Membuat SSL type PFX untuk IIS Certificate](#7-membuat-ssl-type-pfx-untuk-iis-certificate)
     - [7.1 Langkah Mengekspor Sertifikat ke Format .PFX (Beserta Private Key)](#71-langkah-mengekspor-sertifikat-ke-format-pfx-beserta-private-key)
 
 ---
@@ -220,7 +218,7 @@ Pada sisi *gateway* (seperti router utama, MikroTik, atau *firewall* perusahaan)
 
 
 
-## 7 Membuat SSL type PFX untuk IIS Certiface
+## 7 Membuat SSL type PFX untuk IIS Certificate
 
 Pastikan saat pertama kali sertifikat *self-signed* dibuat menggunakan PowerShell, parameter `-KeyExportPolicy Exportable` telah disertakan. Tanpa parameter ini, Windows akan mengunci *private key* dan opsi ekspor `.pfx` akan berwarna abu-abu (*disabled*).
 
